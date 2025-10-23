@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>SpringField Woodworking</title>
+    <link href="%PUBLIC_URL%/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="%PUBLIC_URL%/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <link href="%PUBLIC_URL%/assets/css/utilites.css" rel="stylesheet">
+  <link href="%PUBLIC_URL%/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="%PUBLIC_URL%/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="%PUBLIC_URL%/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<style>
+  .latest-news .date-badge {
+  width: 60px;
+  top: 15px;
+  left: 15px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.latest-news .date-badge div:first-child {
+  font-size: 1.25rem;
+  padding: 5px 0;
+}
+.latest-news .date-badge div:last-child {
+  padding: 2px 0;
+}
+.news-card img {
+  transition: transform 0.4s ease;
+}
+.news-card:hover img {
+  transform: scale(1.05);
+}
+
+.cta-section {
+  background-color: #3b4148; /* Dark grey background */
+}
+
+.text-muted-light {
+  color: #cfd2d5 !important; /* Soft muted text */
+}
+
+.btn-cta {
+  background-color: #7c0000; /* Golden button */
+  color: #fff;
+  letter-spacing: 0.5px;
+  border: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  border:1px solid #7c0000;
+}
+
+.btn-cta:hover {
+    background-color: #fff; 
+  color: #7c0000;
+  transform: translateY(-2px);
+   border:1px solid #7c0000;
+}
+.why-us .feature-card {
+  background: var(--surface-color);
+  padding: 2.5rem 1.5rem;
+  border-radius: 15px;
+ 
+  height: 100%;
+  transition: all 0.3s ease;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.why-us .feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.why-us .feature-card:hover .feature-icon {
+  background: var(--accent-color);
+  color: #fff;
+}
+.why-us .feature-card:hover .feature-icon i{
+
+  color: #fff;
+}
+
+.why-us .feature-icon {
+  width: 80px;
+  height: 80px;
+  background: color-mix(in srgb, var(--accent-color), transparent 85%);
+  color: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 1.5rem;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+  
+}
+
+.why-us .feature-card h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.why-us .feature-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+ 
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .why-us .feature-card {
+    padding: 2rem 1rem;
+  }
+
+  .why-us .feature-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .why-us .feature-card h4 {
+    font-size: 1.2rem;
+  }
+}
+
+.measuring-step {
+  position: relative;
+}
+
+.next-step-arrow {
+  position: absolute;
+  left: 50%;
+  bottom: -45px;
+  transform: translateX(-50%);
+}
+
+.measuring-step:last-child .next-step-arrow {
+  display: none; /* hide the arrow after the last step */
+}
+
+.feature-icon i{
+  color:#7c0000;
+}
+ 
+
+</style>
+
+
+
+  <!-- Font Awesome -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+/>
+
+<!-- Themify Icons -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/themify-icons/0.1.2/css/themify-icons.css"
+/>
+
+<!-- Font Awesome Animation -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.2.1/font-awesome-animation.min.css"
+/>
+
+
+
+
+  <!-- Main CSS File -->
+  <link href="%PUBLIC_URL%/assets/css/main.css" rel="stylesheet">
+
+  </head>
+  <body class="index-page" id="body">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+
+
+  
+
+<!-- public/index.html -->
+<body>
+  <div id="root"></div>
+
+  <script>
+    window.addEventListener('load', function () {
+      const vendorScripts = [
+        "%PUBLIC_URL%/assets/vendor/bootstrap/js/bootstrap.bundle.min.js",
+        "%PUBLIC_URL%/assets/vendor/php-email-form/validate.js",
+        "%PUBLIC_URL%/assets/vendor/aos/aos.js",
+        "%PUBLIC_URL%/assets/vendor/glightbox/js/glightbox.min.js",
+        "%PUBLIC_URL%/assets/vendor/waypoints/noframework.waypoints.js",
+        "%PUBLIC_URL%/assets/vendor/purecounter/purecounter_vanilla.js",
+        "%PUBLIC_URL%/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js",
+        "%PUBLIC_URL%/assets/vendor/isotope-layout/isotope.pkgd.min.js",
+        "%PUBLIC_URL%/assets/js/main.js"
+      ];
+
+      vendorScripts.forEach(src => {
+        const s = document.createElement('script');
+        s.src = src;
+        s.async = false;
+        document.body.appendChild(s);
+      });
+    });
+  </script>
+
+
+
+  </body>
+</html>

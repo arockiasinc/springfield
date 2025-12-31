@@ -4,11 +4,11 @@ export default function SeoMetaDetails({ slug }) {
 
   const seoMap = {
     "kitchen-cabinets": {
-      title: "Custom Kitchen Cabinets | Premium Designs & Craftsmanship | Springfield Woodworking",
+      title: "Custom Cabinets in Winnipeg | Kitchen, Bath & Closet Experts | Springfield Woodworking",
       description:
-        "Springfield Woodworking creates custom kitchen cabinets built for beauty, function and durability. Elevate your kitchen with expert craftsmanship.",
+        "Custom cabinets in Winnipeg for kitchens, bathrooms, and closets. Any size, any style, built to fit your space. Get a free quote today.",
       keywords:
-        "Modern Custom Kitchen Cabinets Winnipeg, custom kitchen cabinets, Winnipeg Custom Cabinet Design , Custom Wood Kitchen Cabinets Winnipeg"
+        " Custom Cabinets in Winnipeg, Custom Bathroom Cabinets , Custom Closet Cabinets Winnipeg, Custom Cabinet Makers, custom built cabinets Winnipeg, custom cabinetry in Winnipeg, custom cabinetry"
     },
     "bathroom-cabinets": {
       title: "Custom Bathroom Cabinets Winnipeg | Springfield Woodworking",

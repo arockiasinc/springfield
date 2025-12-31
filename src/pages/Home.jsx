@@ -55,7 +55,11 @@ export default function Home() {
         <div className="container">
 
           <div className="row gy-3">
-
+            <div className="col-lg-12">
+      <h1 className="text-center fw-bold mb-3">{cmsData[53]?.heading}</h1>
+    
+             <Button onClick={() => openModal(53)}>Edit</Button>
+      </div>
             <div className="col-lg-6">
               <CommonSlider sliderPreviewCount="1" imageGap="0">
                 <div className="swiper-slide">
@@ -76,10 +80,12 @@ export default function Home() {
               </CommonSlider>
             </div>
 
+            
+
             <div className="col-lg-6 d-flex flex-column justify-content-center">
               <div className="about-content ps-0 ps-lg-3">
-                <h6>ABOUT US</h6>
-                <h2 className="below-bar">
+               
+                <h2 className="below-bar fs-2 lh-base">
                   {cmsData[1]?.heading || "Loading..."}
                 </h2>
 
@@ -101,7 +107,8 @@ export default function Home() {
 
           <div className="row gy-3 mt-4">
             <div className="transportation-info aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-
+             <h4 className="below-bar">{cmsData[52]?.heading}</h4><br/>
+             <Button onClick={() => openModal(52)}>Edit</Button>
               <div className="transport-grid">
                 <div className="transport-item">
                   <div className="circle-text ">
@@ -160,11 +167,7 @@ export default function Home() {
               <h6 className="text-white">{cmsData[13]?.heading}</h6>
               <h2 className="below-bar text-white mb-3">{cmsData[13]?.content}</h2>
               <Button onClick={() => openModal(13)}>Edit</Button>
-              <h3 className="text-white mb-3">{cmsData[14]?.heading || <p>Loading Content</p>}</h3>
-              <p className="text-white text-justify">
-                {cmsData[14]?.content}
-              </p>
-              <Button onClick={() => openModal(14)}>Edit</Button>
+              
 
               <Link to="gallery" className="read-more"><span>View our Gallery page</span><i className="fa fa-long-arrow-right"></i></Link>
             </div>
@@ -176,26 +179,37 @@ export default function Home() {
                 data-aos="fade-up"
                 data-aos-delay={300 + index * 50}
               >
-                <article className="stack-card">
-                  <figure className="stack-media">
+
+                
+                <div className="process-card">
+                  <div className="process-img">
 
                     {/* SHOW IMAGE FROM CMS */}
                     <img
                       src={`http://localhost/springfield_react/uploads/${cmsData[id]?.image}`}
                       alt={cmsData[id]?.heading}
-                      className="img-fluid w-100"
+                      className="img-fluid"
                     />
 
-                    <figcaption>
-                      <span className="chip hot">{cmsData[id]?.heading}</span>
-                    </figcaption>
-                  </figure>
+                    <span className="process-number">{cmsData[id]?.heading}</span>
+                    <div className="process-overlay"><span className="text-center p-3"
+                    dangerouslySetInnerHTML={{
+                      __html: cmsData[id]?.content || "",
+                    }}
+                  ></span></div>
+                   
+                  </div>
+                  
 
 
 
                   <Button onClick={() => openModal(id)}>Edit</Button>
 
-                </article>
+                </div>
+
+
+
+              
               </div>
             ))}
 

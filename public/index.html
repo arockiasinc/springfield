@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/assets/images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Custom cabinets in Winnipeg for kitchens, bathrooms, and closets. Any size, any style, built to fit your space. Get a free quote today."
+    />
+    <meta name="keywords" content="Custom Cabinets in Winnipeg, Custom Bathroom Cabinets Winnipeg, Custom Closet Cabinets Winnipeg, Custom Cabinet Makers, custom built cabinets Winnipeg">
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/assets/images/favicon.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+   
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Custom Cabinets in Winnipeg | SpringField Woodworking</title>
+    <link href="%PUBLIC_URL%/assets/images/favicon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="%PUBLIC_URL%/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <link href="%PUBLIC_URL%/assets/css/utilites.css" rel="stylesheet">
+  <link href="%PUBLIC_URL%/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="%PUBLIC_URL%/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="%PUBLIC_URL%/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<style>
+  .latest-news .date-badge {
+  width: 60px;
+  top: 15px;
+  left: 15px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.latest-news .date-badge div:first-child {
+  font-size: 1.25rem;
+  padding: 5px 0;
+}
+.latest-news .date-badge div:last-child {
+  padding: 2px 0;
+}
+.news-card img {
+  transition: transform 0.4s ease;
+}
+.news-card:hover img {
+  transform: scale(1.05);
+}
+
+.cta-section {
+  background-color: #3b4148; /* Dark grey background */
+}
+
+.text-muted-light {
+  color: #cfd2d5 !important; /* Soft muted text */
+}
+
+.btn-cta {
+  background-color: #7c0000; /* Golden button */
+  color: #fff;
+  letter-spacing: 0.5px;
+  border: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  border:1px solid #7c0000;
+}
+
+.btn-cta:hover {
+    background-color: #fff; 
+  color: #7c0000;
+  transform: translateY(-2px);
+   border:1px solid #7c0000;
+}
+.why-us .feature-card {
+  background: var(--surface-color);
+  padding: 2.5rem 1.5rem;
+  border-radius: 15px;
+ 
+  height: 100%;
+  transition: all 0.3s ease;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.why-us .feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.why-us .feature-card:hover .feature-icon {
+  background: var(--accent-color);
+  color: #fff;
+}
+.why-us .feature-card:hover .feature-icon i{
+
+  color: #fff;
+}
+
+.why-us .feature-icon {
+  width: 80px;
+  height: 80px;
+  background: color-mix(in srgb, var(--accent-color), transparent 85%);
+  color: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 1.5rem;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+  
+}
+
+.why-us .feature-card h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.why-us .feature-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+ 
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .why-us .feature-card {
+    padding: 2rem 1rem;
+  }
+
+  .why-us .feature-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .why-us .feature-card h4 {
+    font-size: 1.2rem;
+  }
+  .stack-card{margin-top:20px;}
+}
+
+.measuring-step {
+  position: relative;
+}
+
+.next-step-arrow {
+  position: absolute;
+  left: 50%;
+  bottom: -45px;
+  transform: translateX(-50%);
+}
+
+.measuring-step:last-child .next-step-arrow {
+  display: none; /* hide the arrow after the last step */
+}
+
+.feature-icon i{
+  color:#7c0000;
+}
+ 
+.feature-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+}
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+.feature-icon {
+  font-size: 2rem;
+  color: var(--primary-color, #b8860b);
+  margin-bottom: 1rem;
+}
+.below-bar {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+.feature-card p {
+  text-align: justify;
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+}
+
+.card {
+  border-radius: 1rem;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.list-group-item {
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.font-h3{
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.cover-image {
+  width: 100%;
+  height: 211px;
+  object-fit: cover; /* Fills container, crops excess */
+  object-position: center; /* Centers image focus */
+}
+.custom-bullet-list {
+  list-style: none;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.custom-bullet-list li {
+  position: relative;
+  padding-left: 1.2rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.custom-bullet-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #9a7b4f; /* your brand color */
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+ul li{color:#000;}
+
+/* ===== Backdrop ===== */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+}
+
+.modal-wrapper {
+  position: fixed;
+  inset: 0;
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s forwards;
+  background-color: rgba(0, 0, 0, 0.6); /* backdrop */
+}
+
+/* Modal box itself */
+.modal-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  width: 80%; /* ⬅️ Increase or decrease this */
+  max-width: 900px; /* ⬅️ set your preferred max width */
+  animation: slideDown 0.4s ease;
+}
+
+.status-message {
+  color: green;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+/* ===== Modal Header ===== */
+.modal-box h2 {
+  margin-bottom: 16px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* ===== Form Elements ===== */
+.modal-box label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+.modal-box input,
+.modal-box textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px;
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+/* ===== Buttons ===== */
+.modal-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.modal-buttons button {
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.modal-buttons .cancel {
+  background-color: #ddd;
+}
+
+.modal-buttons .save {
+  background-color: #007bff;
+  color: white;
+}
+
+.modal-buttons button:hover {
+  opacity: 0.9;
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fallDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.3s ease-out;
+}
+
+
+.edit-btn{
+  width: 100px;
+    font-size: 12px;
+    background: #3799d6;
+    border: 1px solid #3799d6;
+    margin-left: 10px;
+}
+.portfolio-content img {
+  width: 100%;
+  height: 260px;       /* set any fixed height you want */
+  object-fit: cover;   /* keeps image centered and cropped nicely */
+  border-radius: 8px;
+}
+.preview-img{width: 150px;height:150px;object-fit: cover;}
+/* Validation error message */
+.invalid-feedback {
+  color: #d32f2f;
+  font-size: 0.95em;
+  margin-top: 4px;
+  display: block;
+}
+
+/* Success message */
+.sent-message {
+  color: #388e3c;
+  background: #e8f5e9;
+  border: 1px solid #388e3c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* Error message */
+.error-message {
+  color: #d32f2f;
+  background: #ffebee;
+  border: 1px solid #d32f2f;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* Loading message */
+.loading {
+  color: #1976d2;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+</style>
+
+
+
+  <!-- Font Awesome -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+/>
+
+<!-- Themify Icons -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/themify-icons/0.1.2/css/themify-icons.css"
+/>
+
+<!-- Font Awesome Animation -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.2.1/font-awesome-animation.min.css"
+/>
+
+
+
+
+  <!-- Main CSS File -->
+  <link href="%PUBLIC_URL%/assets/css/main-style.css" rel="stylesheet">
+
+  </head>
+  <body class="index-page" id="body">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+
+
+  
+
+<!-- public/index.html -->
+<body>
+  
+  <div id="root"></div>
+  <div id="modal-root"></div>
+  
+
+  <script>
+    window.addEventListener('load', function () {
+      const vendorScripts = [
+        "%PUBLIC_URL%/assets/vendor/bootstrap/js/bootstrap.bundle.min.js",
+        "%PUBLIC_URL%/assets/vendor/waypoints/noframework.waypoints.js",
+        "%PUBLIC_URL%/assets/vendor/purecounter/purecounter_vanilla.js",
+        "%PUBLIC_URL%/assets/js/main.js"
+      ];
+
+      vendorScripts.forEach(src => {
+        const s = document.createElement('script');
+        s.src = src;
+        s.async = false;
+        document.body.appendChild(s);
+      });
+    });
+  </script>
+
+
+
+  </body>
+</html>

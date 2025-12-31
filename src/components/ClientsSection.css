@@ -1,0 +1,30 @@
+.clients.section {
+  padding: 60px 0;
+}
+
+.clients .swiper {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.clients .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.clients .swiper-slide img {
+  max-width: 100px;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.clients .swiper-slide img:hover {
+  filter: none;
+  opacity: 1;
+  transform: scale(1.05);
+}

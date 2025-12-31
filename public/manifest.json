@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
   "short_name": "Springfield Woodworking",
   "name": "Springfield Woodworking",
+=======
+  "short_name": "React App",
+  "name": "Create React App Sample",
+>>>>>>> 292e1e61ee1a12937c94c464753a3820184f34d2
   "icons": [
     {
       "src": "favicon.ico",

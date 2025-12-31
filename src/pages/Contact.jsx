@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import ContactForm from "../components/ContactForm"
 import SeoMetaDetails from "../components/SeoMetaDetails";
 export default function Contact(){
@@ -11,4 +12,8 @@ export default function Contact(){
         </div>
         <ContactForm/>
         </>
+=======
+export default function Contact(){
+    return <h1>This is Contact Page...</h1>
+>>>>>>> 292e1e61ee1a12937c94c464753a3820184f34d2
 }

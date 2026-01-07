@@ -104,17 +104,7 @@
   }
   window.addEventListener('load', aosInit);
 
-<<<<<<< HEAD
- 
-=======
-  /**
-   * Initiate glightbox
-   */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
-
->>>>>>> 292e1e61ee1a12937c94c464753a3820184f34d2
+  
   /**
    * Animate the skills items on reveal
    */
@@ -156,11 +146,7 @@
 
   window.addEventListener("load", initSwiper);
 
-<<<<<<< HEAD
-  
 
-
-=======
   /**
    * Init isotope layout and filters
    */
@@ -202,7 +188,7 @@
       faqItem.parentNode.classList.toggle('faq-active');
     });
   });
->>>>>>> 292e1e61ee1a12937c94c464753a3820184f34d2
+
 
   /**
    * Correct scrolling position upon page load for URLs containing hash links.
